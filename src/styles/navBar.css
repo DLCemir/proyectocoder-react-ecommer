@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilos generales del header */
+header {
+  background-color: rgb(143, 148, 143);
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  font-family: Arial, sans-serif;
+}
+.sticky-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Asegúrate de que esté por encima de otros elementos */
+}
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu ul li {
+  margin-left: 20px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.nav-menu ul li a:hover {
+  color: #3498db;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 14px;
+}
+
+.search-bar button[type="submit"] {
+  padding: 8px 12px;
+  background-color: #3498db;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-bar button[type="submit"]:hover {
+  background-color: #2980b9;
+}
